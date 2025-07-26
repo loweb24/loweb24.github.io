@@ -45,7 +45,7 @@
       margin: 0 auto;
       padding: 40px 20px;
     }
-    /* About section with image placeholder */
+    /* About section with bigger profile image */
     #about {
       display: flex;
       flex-wrap: wrap;
@@ -53,15 +53,11 @@
       margin-bottom: 60px;
     }
     .profile-photo {
-      width: 200px;
-      height: 200px;
-      background-color: #eee;
-      border: 2px dashed #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #666;
-      font-style: italic;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      border-radius: 4px;
       margin-right: 30px;
     }
     .about-text {
@@ -110,17 +106,17 @@
   </header>
   <div class="container">
     <section id="about">
-      <div class="profile-photo-placeholder">photo.jpg</div>
+      <img src="photo.jpg" alt="Photo of Ben Lowe" class="profile-photo">
       <div class="about-text">
         <p>I’m a Dickson Instructor and NSF Postdoc at the University of Chicago. Before that I was a graduate student at Princeton where my advisor was <a href="https://www.math.princeton.edu/people/fernando-coda-marques">Fernando Coda&nbsp;Marques</a>. I will be on the tenure track job market in the fall of 2025.</p>
-        <p><a href="https://drive.google.com/file/d/1_QkdKRTLrWqWr-A4DpJUlCuPzM-bE5ia/view?usp=sharing">View my CV</a></p>
+        <p><a href="https://drive.google.com/file/d/1_QkdKRTLrWqWr-A4DpJUlCuPzM-bE5ia/view?usp=sharing">CV</a></p>
       </div>
     </section>
     <section id="research">
       <h2>Research Interests</h2>
       <p>Differential Geometry, Minimal Surfaces, Hyperbolic Geometry, Dynamical Systems, Scalar Curvature, k-Surfaces, Locally Symmetric Spaces.
 Much of my work is focused on rigidity phenomena, in a variety of different geometric settings.</p>
-      <p> <a href="https://loweb24.github.io/notessurveys.html">here</a> are some surveys/notes that might be helpful if you want to learn more.</p>
+      <p> <a href="https://loweb24.github.io/notessurveys.html">Here</a> are some surveys/notes that might be helpful if you want to learn more.</p>
     </section>
     <section id="publications">
       <h2>Papers</h2>
@@ -162,7 +158,6 @@ Much of my work is focused on rigidity phenomena, in a variety of different geom
   <footer>
     &copy; 
   </footer>
-  <!-- Hidden mapmyvisitors script -->
   <div style="display:none;">
     <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=ffffff&amp;w=70&amp;t=n&amp;d=0nN1DQUSUBS-f3Ug44cq2-wmv-YX68LDwz23VUAYYnI"></script>
   </div>
